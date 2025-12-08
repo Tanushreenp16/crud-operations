@@ -1,0 +1,360 @@
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(120deg, #fdfbfb, #ebedee);
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffeb3b;
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #fff;
+    border-radius: 0 0 50% 50% / 10% 10% 0 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px rgba(0,0,0,0.2);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero .btn {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn-view {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+.btn-view:hover {
+    background-color: #ff4757;
+    transform: translateY(-3px) scale(1.05);
+}
+
+.btn-add {
+    background-color: #1dd1a1;
+    color: #fff;
+}
+
+.btn-add:hover {
+    background-color: #10ac84;
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    width: 90%;
+    margin: 60px auto;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Color-coded feature cards */
+.create {
+    border-top: 5px solid #ff6b6b;
+}
+
+.read {
+    border-top: 5px solid #54a0ff;
+}
+
+.update {
+    border-top: 5px solid #1dd1a1;
+}
+
+.delete {
+    border-top: 5px solid #feca57;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
+}
+
+footer p {
+    margin: 0;
+}
+/* Table Styling */
+.table-container {
+    width: 90%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.table-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0072ff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    color: white;
+    font-weight: 600;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-edit {
+    background-color: #1dd1a1;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.btn-edit:hover {
+    background-color: #10ac84;
+}
+
+.btn-delete {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-delete:hover {
+    background-color: #ff4757;
+}
+
+/* About Page */
+.about-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #e9f0ff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.about-container h2 {
+    color: #0072ff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-container ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-container ul li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 5px solid #0072ff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+
+.about-container p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #555;
+}
+/* Add Employee Page Styling */
+.form-container {
+    width: 450px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #4e54c8;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* Input Fields */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #4e54c8;
+    box-shadow: 0 0 8px rgba(78, 84, 200, 0.3);
+}
+
+/* Buttons Container */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+/* Add Button */
+.btn-add {
+    background: #1dd1a1 !important;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-add:hover {
+    background: #10ac84 !important;
+    transform: translateY(-3px);
+}
+
+/* Cancel Button */
+.btn-view {
+    background: #54a0ff !important;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-view:hover {
+    background: #2e86de !important;
+    transform: translateY(-3px);
+}
+
+/* Smooth Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
